@@ -10,6 +10,9 @@
   <remote  name="grapheneos-gitlab"
            fetch="https://gitlab.com/GrapheneOS/"
            revision="refs/heads/13" />
+  <remote  name="befeepilf"
+           fetch="https://github.com/Befeepilf/"
+           revision="refs/heads/13" />
   <default revision="refs/tags/android-13.0.0_r12"
            remote="aosp"
            sync-j="4" />
@@ -75,6 +78,9 @@
   <project path="device/google/bluejay" name="device_google_bluejay" groups="device,bluejay" remote="grapheneos" />
   <project path="device/google/bluejay-sepolicy" name="device/google/bluejay-sepolicy" groups="device,bluejay" />
   <project path="device/google/bluejay-kernel" name="device_google_bluejay-kernel" groups="device,bluejay" clone-depth="1" remote="grapheneos" />
+  <project path="device/google/bonito" name="device_google_bonito" groups="device,bonito,sargo" remote="befeepilf" />
+  <project path="device/google/bonito-sepolicy" name="device_google_bonito-sepolicy" groups="device,bonito" remote="befeepilf" />
+  <project path="device/google/bonito-kernel" name="device_google_bonito-kernel" groups="device,bonito" clone-depth="1" remote="befeepilf" />
   <project path="device/google/bramble" name="device_google_bramble" groups="device,bramble" remote="grapheneos" />
   <project path="device/google/bramble-sepolicy" name="device/google/bramble-sepolicy" groups="device,bramble" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device,pdk" />
